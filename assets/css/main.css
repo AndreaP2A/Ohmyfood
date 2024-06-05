@@ -1,7 +1,117 @@
+@charset "UTF-8";
 /* Purple gradient filling the button and the heart/like icon */
 /* Main colors */
 /* "Nouveau" sign */
-img {
+.intro__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: linear-gradient(360deg, #9356dc -11.44%, #ff79da 123.93%);
+  color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 220px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header__logo {
+  height: 44px;
+  width: 162px;
+}
+
+/* SCSS à reclasser dans les différents fichiers SCSS spécifiques */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #eaeaea;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0px;
+  background: #f6f6f6;
+}
+.intro__title {
+  align-items: flex-start;
+}
+.intro__text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  color: #353535;
+}
+
+.tutorial {
+  padding: 48px 20px;
+}
+.tutorial__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 0;
+}
+.tutorial__container__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 320px;
+  border-radius: 20px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: space-evenly;
+}
+.tutorial__container__step_nb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #9356dc;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.restaurants__container__card__photo {
   width: 346px;
   height: 231px;
   flex-shrink: 0;

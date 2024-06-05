@@ -1,19 +1,93 @@
+@import "./utils/animations";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/functions";
+
 @import "./components/btn_cta";
 @import "./components/btn_fav";
 
 @import "./layouts/main";
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./layouts/loader";
 
 @import "./pages/restaurant";
 
-@import "./utils/animations";
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/functions";
+/* SCSS à reclasser dans les différents fichiers SCSS spécifiques */
 
-img {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__location {
+  @include flex-center;
+  gap: 17px;
+  background-color: $background-grey;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0px;
+  background: $background-light-grey;
+
+  &__title {
+    align-items: flex-start;
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    color: $text-grey;
+  }
+}
+
+.tutorial {
+  padding: 48px 20px;
+
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0;
+
+    &__step {
+      @include flex-center;
+      height: 72px;
+      width: 320px;
+      border-radius: 20px;
+      background: $background-light-grey;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      font-size: 16px;
+      font-weight: 500;
+      justify-content: space-evenly;
+
+      &_nb {
+        @include flex-center;
+        color: white;
+        border-radius: 50%;
+        background-color: $main-color;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.restaurants__container__card__photo {
   width: 346px;
   height: 231px;
   flex-shrink: 0;

@@ -13,7 +13,7 @@ L'application est développée exclusivement en HTML et CSS + SASS.
 ## Technologies
 
 - HTML, CSS, Préprocesseur SASS
-- Javascript et tout CSS dans le code HTML sont proscris
+- Javascript et tout CSS dans le code HTML sont proscrits
 
 ## Test du projet
 
