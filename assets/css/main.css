@@ -1,35 +1,59 @@
 @charset "UTF-8";
 /* Purple gradient filling the button and the heart/like icon */
-/* Main colors */
+/* "Nouveau" sign */
+/* Purple gradient filling the button and the heart/like icon */
 /* "Nouveau" sign */
 .intro__btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 218px;
+  height: 50px;
   border-radius: 25px;
   background: linear-gradient(360deg, #9356dc -11.44%, #ff79da 123.93%);
   color: white;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 220px;
-  height: 50px;
-  margin-top: 30px;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
+  cursor: pointer;
+  /*transition: 0.3s;
+  &:hover {
+    background: $main-color-light;
+  }*/
 }
 
+/* Purple gradient filling the button and the heart/like icon */
+/* "Nouveau" sign */
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 63px;
+  height: 110px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.header__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0px 4px 0px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-.header__logo {
-  height: 44px;
+.header__banner__logo {
   width: 162px;
+  height: 44px;
+}
+.header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
 }
 
 /* SCSS à reclasser dans les différents fichiers SCSS spécifiques */
@@ -44,34 +68,25 @@ a {
   text-decoration: none;
 }
 
-.main__location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-  background-color: #eaeaea;
-  height: 50px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 .intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 290px;
   flex-direction: column;
   text-align: center;
   padding: 40px 0px;
   background: #f6f6f6;
 }
 .intro__title {
-  align-items: flex-start;
+  height: 68px;
 }
 .intro__text {
-  margin-top: 10px;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   color: #353535;
+  margin-bottom: 27px;
 }
 
 .tutorial {
@@ -96,9 +111,10 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   font-weight: 500;
-  justify-content: space-evenly;
+  justify-content: stretch;
+  gap: 30px;
 }
-.tutorial__container__step_nb {
+.tutorial__container__step__nb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,11 +126,55 @@ a {
   font-size: 14px;
   font-weight: 500;
 }
+.tutorial__container__step__iconMobile {
+  width: 18px;
+  fill: grey;
+}
 
-.restaurants__container__card__photo {
+.iconRestaurant {
+  fill: #9356dc;
+}
+
+.restaurants {
+  padding: 54px 20px;
+  background-color: #f6f6f6;
+}
+.restaurants__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 0;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  height: 250px;
+}
+.restaurants__photo {
+  /* ... */
+}
+.restaurants__img {
   width: 346px;
-  height: 231px;
-  flex-shrink: 0;
+  height: 180px;
+  object-fit: cover;
+}
+.restaurants__description {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 13px;
+}
+.restaurants__description__name {
+  /* ...*/
+}
+.restaurants__description__fav {
+  /* ...*/
 }
 
 /*# sourceMappingURL=main.css.map */

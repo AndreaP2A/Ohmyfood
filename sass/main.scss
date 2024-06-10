@@ -3,8 +3,7 @@
 @import "./utils/mixins";
 @import "./utils/functions";
 
-@import "./components/btn_cta";
-@import "./components/btn_fav";
+@import "./components/components";
 
 @import "./layouts/main";
 @import "./layouts/header";
@@ -25,31 +24,24 @@ a {
   text-decoration: none;
 }
 
-.main__location {
-  @include flex-center;
-  gap: 17px;
-  background-color: $background-grey;
-  height: 50px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 .intro {
   @include flex-center;
+  height: 290px;
   flex-direction: column;
   text-align: center;
   padding: 40px 0px;
   background: $background-light-grey;
 
   &__title {
-    align-items: flex-start;
+    height: 68px;
   }
 
   &__text {
-    margin-top: 10px;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
     color: $text-grey;
+    margin-bottom: 27px;
   }
 }
 
@@ -71,9 +63,10 @@ a {
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
       font-size: 16px;
       font-weight: 500;
-      justify-content: space-evenly;
+      justify-content: stretch;
+      gap: 30px;
 
-      &_nb {
+      &__nb {
         @include flex-center;
         color: white;
         border-radius: 50%;
@@ -83,12 +76,61 @@ a {
         font-size: 14px;
         font-weight: 500;
       }
+
+      &__iconMobile {
+        width: 18px;
+        fill: grey;
+      }
     }
   }
 }
 
-.restaurants__container__card__photo {
-  width: 346px;
-  height: 231px;
-  flex-shrink: 0;
+.iconRestaurant {
+  fill: $main-color;
+}
+
+.restaurants {
+  padding: 54px 20px;
+  background-color: $background-light-grey;
+
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 0;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    height: 250px;
+  }
+
+  &__photo {
+    /* ... */
+  }
+
+  &__img {
+    width: 346px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  &__description {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 13px;
+    &__name {
+      /* ...*/
+    }
+
+    &__fav {
+      /* ...*/
+    }
+  }
 }
