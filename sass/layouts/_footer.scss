@@ -1,0 +1,36 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: $text-grey;
+  padding: 22px 25px;
+  color: white;
+
+  &__title {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__list li {
+    list-style-type: none;
+  }
+
+  &__icon {
+    width: 13px;
+    fill: white;
+  }
+
+  &__icon.fa {
+    font-size: 13px;
+  }
+}

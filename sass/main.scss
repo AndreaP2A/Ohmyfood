@@ -21,6 +21,7 @@
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -110,7 +111,7 @@ a {
   }
 
   &__photo {
-    /* ... */
+    height: 180px;
   }
 
   &__img {
@@ -124,7 +125,13 @@ a {
     height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 13px;
+    padding: 0px 33px 0px 13px;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
     &__name {
       /* ...*/
     }
