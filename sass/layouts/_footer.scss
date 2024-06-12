@@ -8,21 +8,55 @@
   background-color: $text-grey;
   padding: 22px 25px;
   color: white;
+  width: 100%;
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    height: 114px;
+    gap: 90px;
+    padding: 30px 70px;
+    align-items: flex-end;
+  }
 
   &__title {
     font-family: "Shrikhand", sans-serif;
     font-weight: 400;
     font-size: 18px;
+    @media (min-width: 1024px) {
+      font-style: normal;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 7px;
-  }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      font-size: 16px;
+      gap: 13px;
+    }
 
-  &__list li {
-    list-style-type: none;
+    & li {
+      list-style-type: none;
+      @media (min-width: 1024px) {
+        @include flex-center;
+        gap: 8px;
+      }
+    }
+
+    & li:nth-child(-n + 2) {
+      @media (min-width: 1024px) {
+        font-weight: 500;
+      }
+    }
+
+    & li:nth-child(3) {
+      @media (min-width: 1024px) {
+        margin-left: 30px;
+      }
+    }
   }
 
   &__icon {

@@ -7,28 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ohmyfood</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ec21c71bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
-        <!-- <i class="header__arrowback fa fa-solid fa-arrow-left"></i> -->
-        <div class="header__banner">
-            <img class="header__banner__logo" src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
-        </div>
-        <div class="header__location">
-            <i class="header__location__icon fa fa-map-marker" aria-hidden="true"></i>
-            <p>Paris, Belleville</p>
-        </div>
-    </header>
-
-    <div class="loader__container">
-        <div class="loader__animation"></div>
+    <div class="loader overlay">
+        <span class="loader__rings"></span>
     </div>
 
     <!-- Définition du linear gradient pour les coeurs, ce svg est invisible -->
@@ -43,6 +32,17 @@
         </svg>
     </div>
 
+    <header class="header">
+        <!-- <i class="header__arrowback fa fa-solid fa-arrow-left"></i> -->
+        <div class="header__banner">
+            <a href="index.html"><img class="header__banner__logo" src="./assets/images/logo/ohmyfood@2x.svg"
+                    alt="Logo ohmyfood"></a>
+        </div>
+        <div class="header__location">
+            <i class="header__location__icon fa fa-map-marker" aria-hidden="true"></i>
+            <p>Paris, Belleville</p>
+        </div>
+    </header>
 
     <main class="main">
 
@@ -67,11 +67,7 @@
                 </div>
                 <div class="tutorial__container__step">
                     <div class="tutorial__container__step__nb">3</div>
-                    <svg class="iconRestaurant tutorial__container__step__iconMobile" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V384H128V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 252.6c-4 1-8 1.8-12.3 2.3z" />
-                    </svg>
+                    <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
             </div>
@@ -88,24 +84,25 @@
                             <img class="restaurants__img" alt="La Palette du Goût"
                                 src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
                         </div>
-                        <div class="restaurants__description">
-                            <div class="restaurants__description__text">
-                                <h3 class="restaurants__description__name">La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                            </div>
-                            <div class="restaurants__description__fav">
-                                <input type="checkbox" class="checkbox" id="checkbox" />
-                                <label for="checkbox">
-                                    <svg id="heart-svg1" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                            id="heart" fill="none" stroke="#000000" fill-rule="evenodd"
-                                            transform="translate(0 0)" />
-                                    </svg>
-                                </label>
-                            </div>
-                        </div>
+
                     </a>
+                    <div class="restaurants__description">
+                        <div class="restaurants__description__text">
+                            <h3 class="restaurants__description__name">La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="restaurants__description__fav">
+                            <input type="checkbox" class="checkbox" id="myCheckbox">
+                            <label for="myCheckbox">
+                                <svg class="heart-svg" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        class="heart" fill="none" stroke="#000000" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+
                 </article>
 
                 <article class="restaurants__card">
@@ -114,25 +111,23 @@
                             <img class="restaurants__img" alt="La Note Enchantée"
                                 src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
                         </div>
-                        <div class="restaurants__description">
-                            <div class="restaurants__description__text">
-                                <h3 class="restaurants__description__name">La note enchantée</h3>
-                                <p>Charonne</p>
-                            </div>
-                            <div class="restaurants__description__fav">
-                                <input type="checkbox" class="checkbox" id="checkbox2" />
-                                <label for="checkbox2">
-                                    <svg id="heart-svg2" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                            id="heart" fill="none" stroke="#000000" fill-rule="evenodd"
-                                            transform="translate(0 0)" />
-                                    </svg>
-                                </label>
-
-                            </div>
-                        </div>
                     </a>
+                    <div class="restaurants__description">
+                        <div class="restaurants__description__text">
+                            <h3 class="restaurants__description__name">La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="restaurants__description__fav">
+                            <input type="checkbox" class="checkbox" id="myCheckbox2">
+                            <label for="myCheckbox2">
+                                <svg class="heart-svg" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        class="heart" fill="none" stroke="#000000" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="restaurants__card">
@@ -141,25 +136,23 @@
                             <img class="restaurants__img" alt="A la Française"
                                 src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                         </div>
-                        <div class="restaurants__description">
-                            <div class="restaurants__description__text">
-                                <h3 class="restaurants__description__name">A la française</h3>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <div class="restaurants__description__fav">
-                                <input type="checkbox" class="checkbox" id="checkbox3" />
-                                <label for="checkbox3">
-                                    <svg id="heart-svg3" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                            id="heart" fill="none" stroke="#000000" fill-rule="evenodd"
-                                            transform="translate(0 0)" />
-                                    </svg>
-                                </label>
-
-                            </div>
-                        </div>
                     </a>
+                    <div class="restaurants__description">
+                        <div class="restaurants__description__text">
+                            <h3 class="restaurants__description__name">A la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="restaurants__description__fav">
+                            <input type="checkbox" class="checkbox" id="myCheckbox3">
+                            <label for="myCheckbox3">
+                                <svg class="heart-svg" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        class="heart" fill="none" stroke="#000000" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="restaurants__card">
@@ -168,25 +161,23 @@
                             <img class="restaurants__img" alt="Le Délice des Sens"
                                 src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                         </div>
-                        <div class="restaurants__description">
-                            <div class="restaurants__description__text">
-                                <h3 class="restaurants__description__name">Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                            </div>
-                            <div class="restaurants__description__fav">
-                                <input type="checkbox" class="checkbox" id="checkbox4" />
-                                <label for="checkbox4">
-                                    <svg id="heart-svg4" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                            id="heart" fill="none" stroke="#000000" fill-rule="evenodd"
-                                            transform="translate(0 0)" />
-                                    </svg>
-                                </label>
-
-                            </div>
-                        </div>
                     </a>
+                    <div class="restaurants__description">
+                        <div class="restaurants__description__text">
+                            <h3 class="restaurants__description__name">Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="restaurants__description__fav">
+                            <input type="checkbox" class="checkbox" id="myCheckbox4">
+                            <label for="myCheckbox4">
+                                <svg class="heart-svg" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        class="heart" fill="none" stroke="#000000" fill-rule="evenodd" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
                 </article>
 
             </div>

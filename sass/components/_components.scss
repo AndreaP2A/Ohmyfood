@@ -10,7 +10,8 @@
   color: white;
   box-shadow: $box-shadow-button;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  font-style: normal;
   cursor: pointer;
   transition: 0.5s;
   &:hover {
@@ -25,50 +26,18 @@
   position: absolute;
 }
 
-/* Animation du coeur */
-#heart-svg1,
-#heart-svg2,
-#heart-svg3,
-#heart-svg4 {
+/* coeur */
+.heart-svg {
   cursor: pointer;
   overflow: visible;
   width: 60px;
-  margin: 20px;
 }
 
-svg #heart {
+svg .heart {
   transform-origin: center;
   animation: animateHeartOut 0.3s linear forwards;
 }
 
 .checkbox {
   display: none;
-}
-
-.checkbox:checked + label svg #heart {
-  transform: scale(0.2);
-  fill: url(#heartGradient);
-  stroke: none;
-  animation: animateHeart 0.3s linear forwards 0.25s;
-}
-
-@keyframes animateHeart {
-  0% {
-    transform: scale(0.2);
-  }
-  40% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes animateHeartOut {
-  0% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
