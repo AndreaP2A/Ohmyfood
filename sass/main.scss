@@ -5,6 +5,7 @@
 
 @import "./components/components";
 
+@import "./layouts/loader";
 @import "./layouts/main";
 @import "./layouts/header";
 @import "./layouts/footer";
@@ -125,19 +126,12 @@ a {
     height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 33px 0px 13px;
+    padding-left: 13px;
 
     &__text {
       display: flex;
       flex-direction: column;
       gap: 5px;
-    }
-    &__name {
-      /* ...*/
-    }
-
-    &__fav {
-      /* ...*/
     }
   }
 }
