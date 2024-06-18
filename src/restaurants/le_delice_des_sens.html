@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La délice des sens</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ec21c71bc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="loader overlay">
+        <span class="loader__rings"></span>
+    </div>
+
+    <!-- Définition du linear gradient pour les coeurs, ce svg est invisible -->
+    <div class="svg__gradient">
+        <svg>
+            <defs>
+                <linearGradient id="heartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="5%" stop-color="#9356dc" />
+                    <stop offset="95%" stop-color="#ff79da" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <header class="header__menuPage">
+        <a class="header__menuPage__back" href="/index.html"><i class="header__arrowback fa fa-solid fa-arrow-left"></i>
+        </a>
+        <a class="header__menuPage__banner" href="/index.html"><img src="/assets/images/logo/ohmyfood@2x.svg"
+                alt="Logo ohmyfood">
+        </a>
+    </header>
+
+    <div class="heroBanner">
+        <img class="heroBanner__img" src="/assets/images/restaurants/lapalettedugout.jpg"
+            alt="Restaurant 'La Palette du Goût'">
+    </div>
+
+    <main class="main">
+        <section class="menu">
+            <div class="menu__title">
+                <h1>La délice des sens</h1>
+                <input type="checkbox" class="checkbox" id="myCheckbox2">
+                <label for="myCheckbox2">
+                    <svg class="heart-svg" viewBox="0 0 58 57" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                            class="heart" fill="none" stroke="#000000" fill-rule="evenodd" />
+                    </svg>
+                </label>
+            </div>
+            <div class="menu__container">
+                <h2 class="menu__container__title">Entrées</h2>
+                <div class="menu__container__underline"></div>
+                <article class="meal">
+                    <h3 class="meal__name">Tartare de thon</h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Assaisonné au yuzu</p>
+                        <span class="meal__info__price">25€</span>
+                    </div>
+                </article>
+                <article class="meal">
+                    <h3 class="meal__name">Bouchée de homard croustillant </h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Et sa farandole de petits légumes</p>
+                        <span class="meal__info__price">35€</span>
+                    </div>
+                </article>
+                <article class="meal">
+                    <h3 class="meal__name">Poulet rôti aux herbes de Provence </h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Et sa crème de truffe</p>
+                        <span class="meal__info__price">40€</span>
+                    </div>
+                </article>
+            </div>
+            <div class="menu__container">
+                <h2 class="menu__container__title">Plats</h2>
+                <div class="menu__container__underline"></div>
+                <article class="meal">
+                    <h3 class="meal__name">Poulet rôti aux herbes de Provence</h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Et sa crème de truffe</p>
+                        <span class="meal__info__price">40€</span>
+                    </div>
+                </article>
+                <article class="meal">
+                    <h3 class="meal__name">Langouste rôtie </h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Et ses légumes de saison</p>
+                        <span class="meal__info__price">35€</span>
+                    </div>
+                </article>
+                <article class="meal">
+                    <h3 class="meal__name">Côte de bœuf Angus</h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Et sa purée de panais</p>
+                        <span class="meal__info__price">44€</span>
+                    </div>
+                </article>
+            </div>
+            <div class="menu__container">
+                <h2 class="menu__container__title">Desserts</h2>
+                <div class="menu__container__underline"></div>
+                <article class="meal">
+                    <h3 class="meal__name">Farandole de desserts</h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Du chef</p>
+                        <span class="meal__info__price">18€</span>
+                    </div>
+                </article>
+                <article class="meal">
+                    <h3 class="meal__name">Crème brulée</h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">Revisitée</p>
+                        <span class="meal__info__price">22€</span>
+                    </div>
+                </article>
+                <article class="meal">
+                    <h3 class="meal__name">Tiramisu </h3>
+                    <div class="meal__info">
+                        <p class="meal__info__side">À la noisette</p>
+                        <span class="meal__info__price">23€</span>
+                    </div>
+                </article>
+            </div>
+            <a class="intro__btn order__btn" href="#">Commander</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
+        <ul class="footer__list">
+            <li>
+                <i class="footer__icon fa fa-cutlery"></i>
+                <a href="#">Proposer un restaurant</a>
+            </li>
+            <li>
+                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M544 248v3.3l69.7-69.7c21.9-21.9 21.9-57.3 0-79.2L535.6 24.4c-21.9-21.9-57.3-21.9-79.2 0L416.3 64.5c-2.7-.3-5.5-.5-8.3-.5H296c-37.1 0-67.6 28-71.6 64H224V248c0 22.1 17.9 40 40 40s40-17.9 40-40V176c0 0 0-.1 0-.1V160l16 0 136 0c0 0 0 0 .1 0H464c44.2 0 80 35.8 80 80v8zM336 192v56c0 39.8-32.2 72-72 72s-72-32.2-72-72V129.4c-35.9 6.2-65.8 32.3-76 68.2L99.5 255.2 26.3 328.4c-21.9 21.9-21.9 57.3 0 79.2l78.1 78.1c21.9 21.9 57.3 21.9 79.2 0l37.7-37.7c.9 0 1.8 .1 2.7 .1H384c26.5 0 48-21.5 48-48c0-5.6-1-11-2.7-16H432c26.5 0 48-21.5 48-48c0-12.8-5-24.4-13.2-33c25.7-5 45.1-27.6 45.2-54.8v-.4c-.1-30.8-25.1-55.8-56-55.8c0 0 0 0 0 0l-120 0z" />
+                </svg>
+                <a href="#">Devenir partenaire</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+        </ul>
+    </footer>
+</body>

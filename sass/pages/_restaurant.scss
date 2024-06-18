@@ -1,0 +1,121 @@
+.header__menuPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  box-shadow: $box-shadow;
+  position: relative;
+  z-index: 2;
+  @media (min-width: 1024px) {
+    height: 96px;
+  }
+
+  &__back {
+    position: absolute;
+    left: 20px;
+  }
+
+  &__banner img {
+    height: 44px;
+    width: 162px;
+  }
+}
+
+.heroBanner {
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    height: 275px;
+  }
+}
+
+.main {
+  @include flex-center;
+  flex-direction: column;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-light-grey;
+  border-radius: 50px 50px 0px 0px;
+  position: relative;
+  gap: 40px;
+  padding: 35px 0px 40px 0px;
+  margin-top: -65px;
+  width: 100%;
+  max-width: 1055px;
+  @media (min-width: 1024px) {
+    padding: 35px 0px 40px 0px;
+  }
+
+  &__title {
+    @include flex-center;
+    gap: 30px;
+    padding: 0px 17px;
+    margin-bottom: -13px;
+    @media (min-width: 1024px) {
+      gap: 20px;
+    }
+    & h1 {
+      font-family: "Shrikhand", sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: $text-color;
+    }
+    & svg {
+      height: 45px;
+      width: 45px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0px 13px;
+    width: 100%;
+    max-width: 634px;
+    &__title {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    &__underline {
+      background-color: $green-line;
+      width: 40px;
+      height: 3px;
+    }
+  }
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 69px;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 15px;
+  box-shadow: $box-shadow-card;
+  background-color: white;
+  &__name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 300;
+    &__price {
+      font-weight: 700;
+    }
+  }
+}

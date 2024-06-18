@@ -20,6 +20,14 @@
   }
 }
 
+.order__btn {
+  align-self: center;
+  justify-self: center;
+  width: 186px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
 .svg__gradient svg {
   width: 0;
   height: 0;
@@ -30,7 +38,7 @@
 .heart-svg {
   cursor: pointer;
   overflow: visible;
-  width: 60px;
+  width: 45px;
 }
 
 svg .heart {

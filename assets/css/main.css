@@ -69,6 +69,14 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
+.order__btn {
+  align-self: center;
+  justify-self: center;
+  width: 186px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
 .svg__gradient svg {
   width: 0;
   height: 0;
@@ -79,7 +87,7 @@
 .heart-svg {
   cursor: pointer;
   overflow: visible;
-  width: 60px;
+  width: 45px;
 }
 
 svg .heart {
@@ -91,8 +99,6 @@ svg .heart {
   display: none;
 }
 
-/* Purple gradient filling the button and the heart/like icon */
-/* "Nouveau" sign */
 .overlay {
   position: fixed;
   display: flex;
@@ -221,9 +227,10 @@ svg .heart {
     height: 50px;
   }
 }
+.header.homepage i {
+  display: none;
+}
 
-/* Purple gradient filling the button and the heart/like icon */
-/* "Nouveau" sign */
 .footer {
   display: flex;
   flex-direction: column;
@@ -295,7 +302,139 @@ svg .heart {
   font-size: 13px;
 }
 
+.header__menuPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 1024px) {
+  .header__menuPage {
+    height: 96px;
+  }
+}
+.header__menuPage__back {
+  position: absolute;
+  left: 20px;
+}
+.header__menuPage__banner img {
+  height: 44px;
+  width: 162px;
+}
+
+.heroBanner__img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+  position: relative;
+  gap: 40px;
+  padding: 35px 0px 40px 0px;
+  margin-top: -65px;
+  width: 100%;
+  max-width: 1055px;
+}
+@media (min-width: 1024px) {
+  .menu {
+    padding: 35px 0px 40px 0px;
+  }
+}
+.menu__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 17px;
+  margin-bottom: -13px;
+}
+@media (min-width: 1024px) {
+  .menu__title {
+    gap: 20px;
+  }
+}
+.menu__title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #101010;
+}
+.menu__title svg {
+  height: 45px;
+  width: 45px;
+}
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0px 13px;
+  width: 100%;
+  max-width: 634px;
+}
+.menu__container__title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.menu__container__underline {
+  background-color: #99e2d0;
+  width: 40px;
+  height: 3px;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 69px;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.meal__name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.meal__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 300;
+}
+.meal__info__price {
+  font-weight: 700;
+}
+
 /* SCSS à reclasser dans les différents fichiers SCSS spécifiques */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -318,6 +457,7 @@ a {
   padding: 40px 45px;
   background: #f6f6f6;
   gap: 30px;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .intro {
@@ -403,10 +543,11 @@ a {
 .restaurants {
   padding: 54px 20px;
   background-color: #f6f6f6;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .restaurants {
-    padding: 54px 180px;
+    padding: 30px 180px;
   }
 }
 .restaurants__container {
@@ -416,12 +557,14 @@ a {
   flex-direction: column;
   gap: 18px;
   padding: 20px 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .restaurants__container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
   }
 }
 .restaurants__card {
@@ -435,7 +578,7 @@ a {
 }
 @media (min-width: 768px) {
   .restaurants__card {
-    flex: 1 1 calc(50% - 18px);
+    flex: 1 1 calc(49% - 18px);
     max-width: 490px;
   }
 }
@@ -452,7 +595,7 @@ a {
   height: 70px;
   justify-content: space-between;
   align-items: center;
-  padding-left: 13px;
+  padding: 0px 13px;
 }
 .restaurants__description__text {
   display: flex;
