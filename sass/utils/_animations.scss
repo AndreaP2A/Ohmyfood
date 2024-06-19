@@ -83,17 +83,28 @@
 /* GREEN SELECTION*/
 
 .meal {
-  @media (min-width: 1024px) {
-    &:hover,
-    &:focus {
-      & .meal__info__select {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        background-color: $tertiary-color;
-        color: white;
-        transition: transform 0.4s ease-in-out;
-      }
+  position: relative;
+  &:hover,
+  &:focus {
+    .meal__select,
+    .iconCheck {
+      position: absolute;
+      height: 100%;
+      width: 65px;
+      transition: width 0.4s ease-in-out;
+    }
+    .meal__price {
+      margin-right: 65px;
+      transition: margin-right 0.4s ease-in-out;
+    }
+  }
+
+  @keyframes grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
     }
   }
 }

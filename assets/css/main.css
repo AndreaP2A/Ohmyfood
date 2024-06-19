@@ -78,14 +78,27 @@
   }
 }
 /* GREEN SELECTION*/
-@media (min-width: 1024px) {
-  .meal:hover .meal__info__select, .meal:focus .meal__info__select {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    background-color: #99e2d0;
-    color: white;
-    transition: transform 0.4s ease-in-out;
+.meal {
+  position: relative;
+}
+.meal:hover .meal__select,
+.meal:hover .iconCheck, .meal:focus .meal__select,
+.meal:focus .iconCheck {
+  position: absolute;
+  height: 100%;
+  width: 65px;
+  transition: width 0.4s ease-in-out;
+}
+.meal:hover .meal__price, .meal:focus .meal__price {
+  margin-right: 65px;
+  transition: margin-right 0.4s ease-in-out;
+}
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
@@ -154,7 +167,7 @@ svg .heart {
   align-items: center;
   z-index: 1000;
   opacity: 1;
-  animation: fadeOut 0.3s 3s forwards;
+  animation: fadeOut 0.3s 2s forwards;
 }
 
 .loader__rings {
@@ -448,32 +461,55 @@ svg .heart {
 
 .meal {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   height: 69px;
-  padding: 15px;
-  gap: 5px;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
+  overflow: hidden;
 }
-.meal__name {
+.meal__price {
+  font-weight: 700;
+  align-self: flex-end;
+  padding: 15px 15px 10px 0px;
+}
+.meal__select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  background-color: #99e2d0;
+  color: white;
+  transition: width 0.4s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.meal__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 15px 0px 15px 15px;
+  flex: 1;
+}
+.meal__info__name {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
 }
-.meal__info {
+
+.iconCheck {
   display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-  font-weight: 300;
-}
-.meal__info__price {
-  font-weight: 700;
-}
-.meal__info__select {
-  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  background-color: #99e2d0;
+  color: white;
 }
 
 /* SCSS à reclasser dans les différents fichiers SCSS spécifiques */
