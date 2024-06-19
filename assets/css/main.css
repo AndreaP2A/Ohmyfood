@@ -87,21 +87,19 @@
   position: absolute;
   height: 100%;
   width: 65px;
-  transition: width 0.4s ease-in-out;
 }
 .meal:hover .meal__price, .meal:focus .meal__price {
   margin-right: 65px;
-  transition: margin-right 0.4s ease-in-out;
 }
-@keyframes grow {
+
+/* @keyframes grow {
   from {
     width: 0;
   }
   to {
     width: 100%;
   }
-}
-
+} */
 /* Purple gradient filling the button and the heart/like icon */
 /* "Nouveau" sign */
 .intro__btn {
@@ -472,6 +470,7 @@ svg .heart {
   font-weight: 700;
   align-self: flex-end;
   padding: 15px 15px 10px 0px;
+  transition: margin-right 0.4s ease-in-out;
 }
 .meal__select {
   display: flex;
@@ -482,11 +481,11 @@ svg .heart {
   padding: 0px;
   background-color: #99e2d0;
   color: white;
-  transition: width 0.4s ease-in-out;
   overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
+  transition: width 0.4s ease-in-out;
 }
 .meal__info {
   display: flex;
@@ -501,6 +500,9 @@ svg .heart {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
+}
+.meal__info__side {
+  /* ... */
 }
 
 .iconCheck {

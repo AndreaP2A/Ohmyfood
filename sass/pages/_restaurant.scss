@@ -105,6 +105,7 @@
     font-weight: 700;
     align-self: flex-end;
     padding: 15px 15px 10px 0px;
+    transition: margin-right 0.4s ease-in-out;
   }
   &__select {
     @include flex-center;
@@ -113,11 +114,11 @@
     padding: 0px;
     background-color: $tertiary-color;
     color: white;
-    transition: width 0.4s ease-in-out;
     overflow: hidden;
     position: absolute;
-    top: 0; // 💡 Added
-    right: 0; // 💡 Added
+    top: 0;
+    right: 0;
+    transition: width 0.4s ease-in-out;
   }
   &__info {
     display: flex;
@@ -127,14 +128,17 @@
     font-weight: 300;
     padding: 15px 0px 15px 15px;
     flex: 1;
+
     &__name {
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
     }
+    &__side {
+      /* ... */
+    }
   }
 }
-
 .iconCheck {
   @include flex-center;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
