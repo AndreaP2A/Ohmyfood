@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Purple gradient filling the button and the heart/like icon */
+/* "Nouveau" sign */
 /* BUTTON HIGHLIGHT */
 @keyframes anim1 {
   0%, 99% {
@@ -46,21 +48,23 @@
   }
 }
 /* DELAYED MENU */
-.menu__container {
-  opacity: 0;
-  animation: slideUp 0.5s ease-out forwards;
-}
-.menu__container:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.menu__container:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.menu__container:nth-child(3) {
-  animation-delay: 0.9s;
-}
-.menu__container:nth-child(4) {
-  animation-delay: 1.2s;
+@media (min-width: 1024px) {
+  .menu__container {
+    opacity: 0;
+    animation: slideUp 0.5s ease-out forwards;
+  }
+  .menu__container:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .menu__container:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .menu__container:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  .menu__container:nth-child(4) {
+    animation-delay: 1.2s;
+  }
 }
 
 @keyframes slideUp {
@@ -73,8 +77,18 @@
     transform: translateY(0);
   }
 }
-/* Purple gradient filling the button and the heart/like icon */
-/* "Nouveau" sign */
+/* GREEN SELECTION*/
+@media (min-width: 1024px) {
+  .meal:hover .meal__info__select, .meal:focus .meal__info__select {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: #99e2d0;
+    color: white;
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
 /* Purple gradient filling the button and the heart/like icon */
 /* "Nouveau" sign */
 .intro__btn {
@@ -457,6 +471,9 @@ svg .heart {
 }
 .meal__info__price {
   font-weight: 700;
+}
+.meal__info__select {
+  display: none;
 }
 
 /* SCSS à reclasser dans les différents fichiers SCSS spécifiques */
