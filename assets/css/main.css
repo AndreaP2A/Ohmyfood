@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* BUTTON HIGHLIGHT */
 @keyframes anim1 {
   0%, 99% {
     opacity: 1;
@@ -17,7 +18,7 @@
     transform: rotate(360deg) scale(0);
   }
 }
-/* HEART */
+/* FILLING HEART */
 .checkbox:checked + label svg .heart {
   transform: scale(0.2);
   fill: url(#heartGradient);
@@ -42,6 +43,34 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+/* DELAYED MENU */
+.menu__container {
+  opacity: 0;
+  animation: slideUp 0.5s ease-out forwards;
+}
+.menu__container:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.menu__container:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.menu__container:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.menu__container:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* Purple gradient filling the button and the heart/like icon */
