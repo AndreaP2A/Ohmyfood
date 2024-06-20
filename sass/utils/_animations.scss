@@ -81,7 +81,6 @@
 }
 
 /* GREEN SELECTION*/
-
 .meal {
   position: relative;
   &:hover,
@@ -94,15 +93,37 @@
     }
     .meal__price {
       margin-right: 65px;
+      padding: 15px 15px 10px 15px;
     }
   }
 }
 
-/* @keyframes grow {
-  from {
-    width: 0;
+/* UNROLLING HEADER ANIMATION */
+@keyframes unrollFromBottom {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
   }
-  to {
-    width: 100%;
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+    opacity: 1;
   }
-} */
+}
+@keyframes unrollHeaderMobile {
+  0% {
+    height: 96px;
+  }
+  100% {
+    height: 146px;
+  }
+}
+@keyframes unrollHeader {
+  0% {
+    height: 63px;
+  }
+  100% {
+    height: 113px;
+  }
+}

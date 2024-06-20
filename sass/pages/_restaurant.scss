@@ -1,7 +1,5 @@
 .header__menuPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   width: 100%;
   height: 63px;
   box-shadow: $box-shadow;
@@ -52,7 +50,7 @@
 
   &__title {
     @include flex-center;
-    gap: 30px;
+    gap: 15px;
     padding: 0px 17px;
     margin-bottom: -13px;
     @media (min-width: 1024px) {
@@ -104,7 +102,7 @@
   &__price {
     font-weight: 700;
     align-self: flex-end;
-    padding: 15px 15px 10px 0px;
+    padding: 15px 15px 10px 5px;
     transition: margin-right 0.4s ease-in-out;
   }
   &__select {
@@ -126,16 +124,26 @@
     gap: 5px;
     font-size: 15px;
     font-weight: 300;
-    padding: 15px 0px 15px 15px;
+    padding: 15px 0px 0px 15px;
     flex: 1;
+    overflow: hidden;
 
     &__name {
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+
     &__side {
-      /* ... */
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

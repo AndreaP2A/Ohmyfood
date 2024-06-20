@@ -31,10 +31,9 @@ a {
 
 .intro {
   @include flex-center;
-  height: 290px;
   flex-direction: column;
   text-align: center;
-  padding: 40px 45px;
+  padding: 40px;
   background: $background-light-grey;
   gap: 30px;
   width: 100%;
@@ -80,7 +79,8 @@ a {
     }
 
     &__step {
-      @include flex-center;
+      display: flex;
+      align-items: center;
       height: 72px;
       width: 320px;
       border-radius: 20px;
@@ -102,17 +102,18 @@ a {
         font-weight: 500;
         margin-left: -12px;
       }
-
-      &__iconMobile {
-        width: 18px;
-        fill: grey;
+      &__icon {
+        font-size: 20px;
+        color: grey;
+        &.purple {
+          color: $main-color;
+        }
+        &.phone {
+          font-size: 24px;
+        }
       }
     }
   }
-}
-
-.iconRestaurant {
-  fill: $main-color;
 }
 
 .restaurants {
