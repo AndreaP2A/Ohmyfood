@@ -1,3 +1,4 @@
+//////////////////// ANIMATIONS
 /* BUTTON HIGHLIGHT */
 @keyframes anim1 {
   0%,
@@ -10,7 +11,6 @@
     z-index: -1;
   }
 }
-
 @keyframes anim2 {
   0% {
     transform: rotate(0deg) scale(1);
@@ -27,7 +27,6 @@
   stroke: none;
   animation: animateHeart 0.3s linear forwards 0.25s;
 }
-
 @keyframes animateHeart {
   0% {
     transform: scale(0.2);
@@ -39,7 +38,6 @@
     transform: scale(1);
   }
 }
-
 @keyframes animateHeartOut {
   0% {
     transform: scale(1.4);
@@ -68,7 +66,6 @@
     }
   }
 }
-
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -80,16 +77,16 @@
   }
 }
 
-/* GREEN SELECTION*/
+/* GREEN SELECT */
 .meal {
   position: relative;
   &:hover,
   &:focus {
     .meal__select,
     .iconCheck {
-      position: absolute;
       height: 100%;
       width: 65px;
+      @include flex-center;
     }
     .meal__price {
       margin-right: 65px;

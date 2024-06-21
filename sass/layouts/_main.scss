@@ -1,0 +1,149 @@
+//////////////////// MAIN
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: fit-content;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.intro {
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  background: $background-light-grey;
+  gap: 30px;
+  width: 100%;
+  @media (min-width: 1024px) {
+    height: 240px;
+    gap: 30px;
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    @media (min-width: 1024px) {
+      font-size: 40px;
+    }
+
+    &__text {
+      @include font-style(18px, 300);
+      color: $text-grey;
+      line-height: normal;
+    }
+  }
+}
+
+.tutorial {
+  padding: 48px 20px;
+  @media (min-width: 1024px) {
+    padding: 50px 180px;
+    min-width: 1024px;
+    width: 100%;
+  }
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 35px;
+    }
+    &__step {
+      display: flex;
+      align-items: center;
+      @include font-style(16px, 500);
+      @include size(320px, 72px);
+      border-radius: 20px;
+      background: $background-light-grey;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      justify-content: stretch;
+      gap: 30px;
+      &__nb {
+        @include flex-center;
+        @include size(24px, 24px);
+        @include font-style(14px, 500);
+        color: white;
+        border-radius: 50%;
+        background-color: $main-color;
+        margin-left: -12px;
+      }
+      &__icon {
+        font-size: 20px;
+        color: grey;
+        &.purple {
+          color: $main-color;
+        }
+        &.phone {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.restaurants {
+  padding: 54px 20px;
+  background-color: $background-light-grey;
+  width: 100%;
+  @media (min-width: 1024px) {
+    padding: 30px 180px;
+  }
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 0;
+    width: 100%;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+  &__card {
+    @include flex-column;
+    @include size(100%, 250px);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    @media (min-width: 768px) {
+      flex: 1 1 calc(49% - 18px);
+    }
+  }
+  &__photo {
+    height: 180px;
+  }
+  &__img {
+    @include size(100%, 180px);
+    object-fit: cover;
+  }
+  &__description {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 13px;
+    &__text {
+      @include flex-column;
+      gap: 5px;
+    }
+  }
+}

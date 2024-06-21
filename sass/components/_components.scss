@@ -1,17 +1,12 @@
-@use "../utils/mixins";
-@use "../utils/variables";
-
+/* EXPLORE AND ORDER BUTTONS */
 .intro__btn {
   @include flex-center;
-  width: 218px;
-  height: 50px;
+  @include font-style(16px, 400);
+  @include size(218px, 50px);
   border-radius: 25px;
   background: $purple-gradient;
   color: white;
   box-shadow: $box-shadow-button;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
   cursor: pointer;
   transition: 0.5s;
   &:hover {
@@ -19,33 +14,42 @@
     box-shadow: $box-shadow-button-hover;
   }
 }
-
 .order__btn {
+  @include size(186px, 50px);
   align-self: center;
   justify-self: center;
-  width: 186px;
-  height: 50px;
   flex-shrink: 0;
 }
 
+/* HEART */
 .svg__gradient svg {
-  width: 0;
-  height: 0;
+  @include size(0, 0);
   position: absolute;
 }
-
-/* coeur */
 .heart-svg {
   cursor: pointer;
   overflow: visible;
   width: 45px;
 }
-
 svg .heart {
   transform-origin: center;
   animation: animateHeartOut 0.3s linear forwards;
 }
-
 .checkbox {
   display: none;
+}
+
+/* "NEW" GREEN BADGE */
+.restaurant__new-badge {
+  @include flex-center;
+  @include size(80px, 29px);
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-color: $new-background;
+  color: $new-text;
+  font-weight: 500;
+  position: absolute;
+  box-shadow: $box-shadow;
+  top: 13px;
+  right: 12px;
 }
