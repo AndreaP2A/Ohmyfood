@@ -1,6 +1,7 @@
 /* BUTTON HIGHLIGHT */
 @keyframes anim1 {
-  0%, 99% {
+  0%,
+  99% {
     opacity: 1;
     z-index: 1;
   }
@@ -79,7 +80,8 @@
   position: relative;
 }
 .meal:hover .meal__select,
-.meal:hover .iconCheck, .meal:focus .meal__select,
+.meal:hover .iconCheck,
+.meal:focus .meal__select,
 .meal:focus .iconCheck {
   height: 100%;
   width: 65px;
@@ -87,7 +89,8 @@
   justify-content: center;
   align-items: center;
 }
-.meal:hover .meal__price, .meal:focus .meal__price {
+.meal:hover .meal__price,
+.meal:focus .meal__price {
   margin-right: 65px;
   padding: 15px 15px 10px 15px;
 }
@@ -264,7 +267,6 @@ html {
 }
 
 body {
-  min-width: fit-content;
   width: 100%;
 }
 
@@ -552,7 +554,7 @@ a {
   }
 }
 @media (min-width: 1024px) {
-  .footer__list li:nth-child(-n+2) {
+  .footer__list li:nth-child(-n + 2) {
     font-weight: 500;
   }
 }
