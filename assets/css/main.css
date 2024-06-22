@@ -655,8 +655,7 @@ a {
   opacity: 0;
   animation: slideUp 0.5s ease-out forwards;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 12px;
   padding: 0px 13px;
   width: 100%;

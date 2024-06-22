@@ -73,7 +73,7 @@
   &__container {
     opacity: 0;
     animation: slideUp 0.5s ease-out forwards;
-    @include flex-center;
+    @include flex-column;
     gap: 12px;
     padding: 0px 13px;
     width: 100%;
