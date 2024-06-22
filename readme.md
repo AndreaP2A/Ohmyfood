@@ -22,7 +22,7 @@ L'application est développée exclusivement en HTML et CSS + SASS.
 
 ## Site en ligne
 
-Une version sur GitHub Pages sera bientôt disponible.
+https://andreap2a.github.io/Ohmyfood/
 
 ## Structure du projet
 
