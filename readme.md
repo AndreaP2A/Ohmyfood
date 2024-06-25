@@ -33,15 +33,18 @@ Ohmyfood est un projet fictif, constituant le 2nd projet pratique dans le cadre 
 
 ## En attendant de réserver chez Ohmyfood un jour... des animations !
 
-<div>
 <p>- Aussi rapide que notre connexion internet soit, il y a toujours un temps de chargement, même infime... durant ce temps en question, admirez une petite animation de chargement.</p>
 <p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_loader_animated.gif" alt="Animation du loader"></p>
+    <br />
 <p>- Un bouton tout plat sans animation, ça ne donne pas envie de cliquer... L'équipe technique a donc opté pour un petit "glow" du call-to-action d'Ohmyfood au survol !</p>
 <p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_cta_animated.gif" alt="Animation du bouton"></p>
+    <br />
 <p>- Envie de marquer votre restaurant comme "favori", dans les résultats de recherche ou sur le menu ? Un click et le coeur se rempli d'un beau gradient violet, un autre click et il se vide.</p>
 <p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_fav_animated.gif" alt="Animation du coeur ('like')"></p>
+    <br />
 <p>- Dans un soucis de fluidité, les différentes sections des menus apparaissent les uns après les autres au chargement de la page.</p>
 <p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_slide_up_animated.gif" alt="Animation slide up des menus"></p>
+    <br />
 <p>- Pour être certain d'avoir choisi nos plats, il est utile d'avoir un marqueur nous confirmant notre choix après click : une animation fluide de type "check" a été choisie.</p>
 <p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_meal_select_animated.gif" alt="Animation de sélection des plats"></p>
 
@@ -55,7 +58,7 @@ Ohmyfood est un projet fictif, constituant le 2nd projet pratique dans le cadre 
 
 https://andreap2a.github.io/Ohmyfood/
 
-<p><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_desktop_animated.gif" alt="Animation du site en ligne"></p>
+<p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_desktop_animated.gif" alt="Animation du site en ligne"></p>
 
 ## Contact
 
