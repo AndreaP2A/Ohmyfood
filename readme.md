@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/AndreaP2A/Ohmyfood">
-    <img src="https://andreap2a.github.io/Ohmyfood/assets/images/logo/ohmyfood.png" alt="Logo">
+    <img src="https://andreap2a.github.io/Ohmyfood/assets/images/logo/ohmyfood_whitebg.png" alt="Logo">
   </a>
 
 <h3 align="center">OhmyFood</h3>
