@@ -14,10 +14,10 @@
 
 ## Contexte du projet
 
-Ohmyfood est un projet fictif, constituant le 2nd projet pratique dans le cadre de mon cursus chez OpenClassrooms. Celui-ci m'a amené à travailler sur :
+Ohmyfood est un projet fictif, constituant le 2nd projet pratique dans le cadre du cursus que je suis chez OpenClassrooms. Celui-ci m'a amené à travailler sur :
 
 - une interface responsive pensée en "mobile-first" d'un site de réservation de restaurant en ligne (breakpoints classique de 1440px pour desktop, 1024px pour tablette et 375px pour mobile)
-- la mise en oeuvre d'animations CSS
+- la mise en oeuvre d'animations CSS, Javascript était proscrit !
 - l'apprentissage de SASS pour structurer et optimiser mon CSS
 - le respect d'un brief créatif, cahier des charges
 - le versionnage mon projet avec Git et GitHub
@@ -52,13 +52,13 @@ Ohmyfood est un projet fictif, constituant le 2nd projet pratique dans le cadre 
 
 1. Clonez ce dépôt de code sur votre machine locale.
 2. Ouvrez le fichier `index.html` dans votre navigateur web.
-3. Késako? Pas le temps? Visitez la version en ligne !
+3. Késako ? Pas le temps ? N'hésitez pas à visiter la version en ligne !
 
 ## Site en ligne
 
-https://andreap2a.github.io/Ohmyfood/
+https://andreap2a.github.io/Ohmyfood/index.html
 
-<p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_desktop_animated.gif" alt="Animation du site en ligne"></p>
+<p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_desktop_animated_min.gif" alt="Animation du site en ligne"></p>
 
 ## Contact
 
