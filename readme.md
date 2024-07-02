@@ -7,7 +7,7 @@
 
 <p align="center"><img src="https://andreap2a.github.io/Ohmyfood/assets/images/mockups_github/Ohmyfood_static_mockups.png" alt="Mockup Ohmyfood (visuel téléphone et desktop)"></p>
   <p align="center">
-    Ohmyfood est une application qui répertorie les menus de restaurants gastronomique dans une ville choisie et vous permet non seulement d'y réserver une table en ligne, mais aussi de composer à l'avance votre menu afin que vos plats soient prêts à votre arrivée.<br />
+    Ohmyfood est une application qui répertorie les menus de restaurants gastronomiques dans une ville choisie et vous permet non seulement d'y réserver une table en ligne, mais aussi de composer à l'avance votre menu afin que vos plats soient prêts à votre arrivée.<br />
     <br />
   </p>
 </div>
@@ -20,7 +20,7 @@ Ohmyfood est un projet fictif, constituant le 2nd projet pratique dans le cadre 
 - la mise en oeuvre d'animations CSS, Javascript était proscrit !
 - l'apprentissage de SASS pour structurer et optimiser mon CSS
 - le respect d'un brief créatif, cahier des charges
-- le versionnage mon projet avec Git et GitHub
+- le versionnage de mon projet avec Git et GitHub
 - la publication de mon rendu en ligne via GitHub Pages
 
 ## Technologies utilisées
