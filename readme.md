@@ -106,7 +106,7 @@ L'organisation des fichiers suit l'architecture **7-1 Pattern** pour une gestion
 ## 🌐 Aperçu en ligne
 
 Le projet est accessible en ligne via GitHub Pages : 
-👉 [Consulter la démo Ohmyfood](https://andreap2a.github.io/Ohmyfood/index.html)
+👉 [Consulter la démo Ohmyfood](https://andreap2a.github.io/P2-Ohmyfood/)
 
 ---
 
